@@ -52,3 +52,15 @@ def nova_lista(A):
             B.append(y)
     print(B)
 #set faz essa função no python
+
+def primo(numero):
+    if numero ==1:
+        return numero, "Não é primo"
+    elif numero ==2:
+        return numero, "É primo"
+
+    for x in range(2,numero):
+        if numero % x == 0:
+            return numero, "Não é primo"
+        return numero, "É primo"
+
