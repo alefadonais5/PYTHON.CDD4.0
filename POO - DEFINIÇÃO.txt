@@ -1,0 +1,21 @@
+Conceito Programação Orientada a Objeto
+#Metodologia deorganização os códigos no aspectos do mundo real.
+
+
+Objetos - 
+Classes - é a estrutura (Fôrma)
+Mensagem - Comunicação entre os objetos
+Abstração - Abstrair alguns que não preciso para utilizar aquele objetos
+Encupsaliamento - Protege os atributos, o metodo da própria classe pode alterar os atributos.
+Herança - Pega as mesmas características de uma SuperClasse
+Porlimofismo - Reescreve o metodo com relação a Subclasse
+
+
+Itens da Classes: Atributos - Características do objeto
+	          	Método - Ação
+
+
+Estudar
+Como cirar uma Classe
+Como instanciar um metodo
+Metodo construtor
