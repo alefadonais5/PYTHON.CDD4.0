@@ -1,5 +1,5 @@
 class Conta:
-    def __init__(self, Numero_Conta, Saldo, Status, Nome_Cliente, Tipo_Conta, Limite=0, Limite_Usado=0):
+    def __init__(self, Numero_Conta, Saldo, Status, Nome_Cliente, Tipo_Conta, Limite=0, Limite_Usado=0, Extrato):
 
         self.Nome_Cliente = Nome_Cliente
         self.Numero_Conta = Numero_Conta
@@ -8,6 +8,7 @@ class Conta:
         self.Tipo_Conta = Tipo_Conta
         self.Limite = Limite
         self.Limite_Usado = Limite_Usado
+        self.Extrato = Extrato
 
     def Depositar(self, Deposito):
         if self.Status == "Ativado":
@@ -69,6 +70,12 @@ class Conta:
         if self.Limite > 0:
             self.Limite = False
             return self.Limite
+
+    def Extrato_Conta(self):
+        self.Extrato = open("Extrato.txt" 'w')
+
+
+
 
 
 C1 = Conta(254,500, "Ativado", "Cliente 1", "Corrente")
