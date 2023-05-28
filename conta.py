@@ -1,5 +1,5 @@
 class Conta:
-    def __init__(self, Numero_Conta, Saldo, Status, Nome_Cliente, Tipo_Conta, Limite=0, Limite_Usado=0, Extrato):
+    def __init__(self, Numero_Conta, Saldo, Status, Nome_Cliente, Tipo_Conta, Limite=0, Limite_Usado=0):
 
         self.Nome_Cliente = Nome_Cliente
         self.Numero_Conta = Numero_Conta
@@ -8,7 +8,6 @@ class Conta:
         self.Tipo_Conta = Tipo_Conta
         self.Limite = Limite
         self.Limite_Usado = Limite_Usado
-        self.Extrato = Extrato
 
     def Depositar(self, Deposito):
         if self.Status == "Ativado":
@@ -27,11 +26,11 @@ class Conta:
         if self.Status == "Ativado":
             if Saque < self.Saldo or Saque == self.Saldo:
                 self.Saldo = self.Saldo-Saque
-                return self.Saldo
+                print(f'Seu saldo é {self.Saldo}')
             else:
                 self.Limite_Usado = Saque-self.Saldo
                 self.Saldo = self.Saldo-Saque
-                return self.Limite_Usado, self.Saldo
+                print(f'Seu limite usado é {self.Limite_Usado} e o saldo é {self.Saldo}')
 
         else:
             print("Conta está desativada")
@@ -72,17 +71,15 @@ class Conta:
             return self.Limite
 
     def Extrato_Conta(self):
-        self.Extrato = open("Extrato.txt" 'w')
+        with open('Extrato.txt', 'w') as self.Extrato:
+            self.Extrato.write(f'{return self.Saldo}') #não estou conseguindo inserir as movimentações
 
 
 
-
-
-C1 = Conta(254,500, "Ativado", "Cliente 1", "Corrente")
+C1 = Conta(254,1, "Ativado", "Cliente 1", "Corrente")
 # C2 = Conta(253,1000,"Ativado", "Opal", "Poupança")
 C1.Ativar_Limite(300)
 var = C1.Sacar(700)
-print(var)
-
-var1 = C1.Depositar(100)
+var1= C1.Depositar(700)
 print(var1)
+C1.Extrato_Conta()
