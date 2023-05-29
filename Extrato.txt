@@ -1,0 +1,61 @@
+Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+SaquesNome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques <_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+SaquesNome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+SaquesNome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+SaquesNome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>Nome: Opal
+Número da conta: 254
+Saldo: 850
+Tipo da conta: Corrente
+Saques<_io.TextIOWrapper name='Extrato.txt' mode='a' encoding='cp1252'>

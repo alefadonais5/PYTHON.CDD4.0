@@ -10,15 +10,15 @@ class Conta:
         self.Limite = Limite
         self.Limite_Usado = Limite_Usado
 
-    datetime
 
     def Depositar(self, Deposito):
         if self.Status == "Ativado":
             if self.Saldo >= 0:
                 self.Saldo = Deposito+self.Saldo
                 return self.Saldo
+                Extrato.write(f'Deposito R$ {Deposito} ocorrido em:')
             else:
-                self.Limite_Usado = Deposito+self.Saldo #corrigir essa parte
+                self.Limite_Usado = Deposito+self.Saldo
                 self.Saldo = self.Saldo + Deposito
                 return self.Limite_Usado, self.Saldo
 
@@ -30,6 +30,8 @@ class Conta:
             if Saque < self.Saldo or Saque == self.Saldo:
                 self.Saldo = self.Saldo-Saque
                 print(f'Seu saldo é {self.Saldo}')
+                inforDoTxt = f'Foi sacado R$ {Saque}'
+
             else:
                 self.Limite_Usado = Saque-self.Saldo
                 self.Saldo = self.Saldo-Saque
@@ -73,16 +75,13 @@ class Conta:
             self.Limite = False
             return self.Limite
 
-    def Extrato_Conta(self):
-        with open('Extrato.txt', 'w') as Extrato: #não estou conseguindo inserir as movimentações
-            Extrato.write(f'Nome: {self.Nome_Cliente}\n'
-                          f'Número da conta: {self.Numero_Conta}\n'
-                          f'Saldo: {self.Saldo}\n'
-                          f'Tipo da conta: {self.Tipo_Conta}\n'
-                          f'Saques {}')
-
+    def Extrato_Conta(self, add):
+        self.add = add
+        with open('Extrato.txt', 'a') as Extrato: #não estou conseguindo inserir as movimentações
+            Extrato.write(f'Nome: {self.Nome_Cliente}\nNúmero da conta: {self.Numero_Conta}\nSaldo: {self.Saldo}\nTipo da conta: {self.Tipo_Conta}\nSaques')
+            Extrato.write(add)
 C1 = Conta(254,850, "Ativado", "Opal", "Corrente")
-# C2 = Conta.Extrato_Conta(253,1000,"Ativado", "Opal", "Poupança")
+#C2 = Conta.Extrato_Conta(253,1000,"Ativado", "Opal", "Poupança")
 C1.Ativar_Limite(300)
 var = C1.Sacar(700)
 var1= C1.Depositar(700)
