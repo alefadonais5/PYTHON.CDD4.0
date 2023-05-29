@@ -73,13 +73,18 @@ class Conta:
             self.Limite = False
             return self.Limite
 
-    def Extrato_Conta(self, Extrato):
-        with open('Extrato.txt', 'a') as Extrato: #não estou conseguindo inserir as movimentações
-            Extrato.write()
-C1 = Conta(254,850, "Ativado", "Cliente 1", "Corrente")
+    def Extrato_Conta(self):
+        with open('Extrato.txt', 'w') as Extrato: #não estou conseguindo inserir as movimentações
+            Extrato.write(f'Nome: {self.Nome_Cliente}\n'
+                          f'Número da conta: {self.Numero_Conta}\n'
+                          f'Saldo: {self.Saldo}\n'
+                          f'Tipo da conta: {self.Tipo_Conta}\n'
+                          f'Saques {}')
+
+C1 = Conta(254,850, "Ativado", "Opal", "Corrente")
 # C2 = Conta.Extrato_Conta(253,1000,"Ativado", "Opal", "Poupança")
 C1.Ativar_Limite(300)
 var = C1.Sacar(700)
 var1= C1.Depositar(700)
 print(var1)
-C1.Extrato_Conta(Extrato=Extrato.txt)
+C1.Extrato_Conta()
