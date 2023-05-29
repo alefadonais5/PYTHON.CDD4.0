@@ -7,6 +7,7 @@ class Conta:
         self.Saldo = Saldo
         self.Status = Status
         self.Tipo_Conta = Tipo_Conta
+        self.Data = datetime.datetime.now()
         self.Limite = Limite
         self.Limite_Usado = Limite_Usado
 
@@ -15,11 +16,15 @@ class Conta:
         if self.Status == "Ativado":
             if self.Saldo >= 0:
                 self.Saldo = Deposito+self.Saldo
-                return self.Saldo
+                # return self.Saldo
+                inforDoTxt = f'Foi depositado R$ {Deposito} em {self.Data}'#só funciona  sem o retorno
+                self.Extrato_Conta(inforDoTxt)
             else:
                 self.Limite_Usado = Deposito+self.Saldo
                 self.Saldo = self.Saldo + Deposito
-                return self.Limite_Usado, self.Saldo
+                # return self.Limite_Usado, self.Saldo
+                inforDoTxt = f'Foi depositado R$ {Deposito} em {self.Data}' #só funciona  sem o retorno
+                self.Extrato_Conta(inforDoTxt)
 
         else:
             print("Conta está desativada")
@@ -28,14 +33,16 @@ class Conta:
         if self.Status == "Ativado":
             if Saque < self.Saldo or Saque == self.Saldo:
                 self.Saldo = self.Saldo-Saque
-                print(f'Seu saldo é {self.Saldo}')
-                inforDoTxt = f'Foi sacado R$ {Saque}'
-                Extrato_Conta(inforDoTxt)
+                # print(f'Seu saldo é {self.Saldo}')
+                inforDoTxt = f'Foi sacado R$ {Saque} em {self.Data}'#só funciona  sem o retorno
+                self.Extrato_Conta(inforDoTxt)
 
             else:
                 self.Limite_Usado = Saque-self.Saldo
                 self.Saldo = self.Saldo-Saque
-                print(f'Seu limite usado é {self.Limite_Usado} e o saldo é {self.Saldo}')
+                print(f'Seu limite usado é {self.Limite_Usado} e o saldo é {self.Saldo}')#só funciona  sem o retorno
+                inforDoTxt = f'Foi sacado R$ {Saque}'
+                self.Extrato_Conta(inforDoTxt)
 
         else:
             print("Conta está desativada")
@@ -78,12 +85,16 @@ class Conta:
     def Extrato_Conta(self, add):
         self.add = add
         with open('Extrato.txt', 'a') as Extrato: #não estou conseguindo inserir as movimentações
-            Extrato.write(f'Nome: {self.Nome_Cliente}\nNúmero da conta: {self.Numero_Conta}\nSaldo: {self.Saldo}\nTipo da conta: {self.Tipo_Conta}\nSaques ')
+            Extrato.write(f'Nome: {self.Nome_Cliente}\nNúmero da conta: {self.Numero_Conta}\nSaldo: {self.Saldo}\nTipo da conta: {self.Tipo_Conta}\n')
             Extrato.write(add)
+
+
 C1 = Conta(254,850, "Ativado", "Opal", "Corrente")
 #C2 = Conta.Extrato_Conta(253,1000,"Ativado", "Opal", "Poupança")
 C1.Ativar_Limite(300)
+C1.Depositar(50)
+C1.Sacar(200)
+C1.Depositar(50)
 var = C1.Sacar(700)
 var1= C1.Depositar(700)
 print(var1)
-# C1.Extrato_Conta()
