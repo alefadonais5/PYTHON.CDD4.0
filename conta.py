@@ -1,3 +1,4 @@
+import datetime
 class Conta:
     def __init__(self, Numero_Conta, Saldo, Status, Nome_Cliente, Tipo_Conta, Limite=0, Limite_Usado=0):
 
@@ -8,6 +9,8 @@ class Conta:
         self.Tipo_Conta = Tipo_Conta
         self.Limite = Limite
         self.Limite_Usado = Limite_Usado
+
+    datetime
 
     def Depositar(self, Deposito):
         if self.Status == "Ativado":
@@ -70,16 +73,13 @@ class Conta:
             self.Limite = False
             return self.Limite
 
-    def Extrato_Conta(self):
-        with open('Extrato.txt', 'w') as self.Extrato:
-            self.Extrato.write(f'{return self.Saldo}') #não estou conseguindo inserir as movimentações
-
-
-
-C1 = Conta(254,1, "Ativado", "Cliente 1", "Corrente")
-# C2 = Conta(253,1000,"Ativado", "Opal", "Poupança")
+    def Extrato_Conta(self, Extrato):
+        with open('Extrato.txt', 'a') as Extrato: #não estou conseguindo inserir as movimentações
+            Extrato.write()
+C1 = Conta(254,850, "Ativado", "Cliente 1", "Corrente")
+# C2 = Conta.Extrato_Conta(253,1000,"Ativado", "Opal", "Poupança")
 C1.Ativar_Limite(300)
 var = C1.Sacar(700)
 var1= C1.Depositar(700)
 print(var1)
-C1.Extrato_Conta()
+C1.Extrato_Conta(Extrato=Extrato.txt)
