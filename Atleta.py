@@ -27,7 +27,7 @@ class Corredor(Atleta):
         if self.Aposentado==False:
             if self.Aquecendo==True:
                 print("Está correndo....")
-                self.Aquecendo=False
+                self.Aquecendo=False #não é obrigatório
                 self.Correndo = True
             else:
                 print("O atleta não está aquecendo, não pode correr agora")
