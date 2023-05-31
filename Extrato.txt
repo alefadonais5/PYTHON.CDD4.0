@@ -1,73 +1,26 @@
-Nome: Opal
-Número da conta: 254
-Saldo: 750
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:57:16.574270Nome: Opal
-Número da conta: 254
-Saldo: 900
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:57:23.835115Nome: Opal
-Número da conta: 254
-Saldo: 700
-Tipo da conta: Corrente
-Foi sacado R$ 200 em 2023-05-29 20:57:23.835115Nome: Opal
-Número da conta: 254
-Saldo: 750
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:57:23.835115Nome: Opal
-Número da conta: 254
-Saldo: 700
-Tipo da conta: Corrente
-Foi sacado R$ 200 em 2023-05-29 20:57:47.323391Nome: Opal
-Número da conta: 254
-Saldo: 900
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:58:26.157698Nome: Opal
-Número da conta: 254
-Saldo: 700
-Tipo da conta: Corrente
-Foi sacado R$ 200 em 2023-05-29 20:58:26.157698Nome: Opal
-Número da conta: 254
-Saldo: 750
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:58:26.157698Nome: Opal
-Número da conta: 254
-Saldo: 900
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:58:35.081081Nome: Opal
-Número da conta: 254
-Saldo: 700
-Tipo da conta: Corrente
-Foi sacado R$ 200 em 2023-05-29 20:58:35.081081Nome: Opal
-Número da conta: 254
-Saldo: 750
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:58:35.081081Nome: Opal
-Número da conta: 254
-Saldo: 50
-Tipo da conta: Corrente
-Foi sacado R$ 700 em 2023-05-29 20:58:35.081081Nome: Opal
-Número da conta: 254
-Saldo: 750
-Tipo da conta: Corrente
-Foi depositado R$ 700 em 2023-05-29 20:58:35.081081Nome: Opal
-Número da conta: 254
-Saldo: 900
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:59:43.081484Nome: Opal
-Número da conta: 254
-Saldo: 700
-Tipo da conta: Corrente
-Foi sacado R$ 200 em 2023-05-29 20:59:43.081484Nome: Opal
-Número da conta: 254
-Saldo: 750
-Tipo da conta: Corrente
-Foi depositado R$ 50 em 2023-05-29 20:59:43.081484Nome: Opal
-Número da conta: 254
-Saldo: 50
-Tipo da conta: Corrente
-Foi sacado R$ 700 em 2023-05-29 20:59:43.081484Nome: Opal
-Número da conta: 254
-Saldo: 750
-Tipo da conta: Corrente
-Foi depositado R$ 700 em 2023-05-29 20:59:43.081484
+Foi depositado R$ 50 em 2023-05-30 23:30:04.708248Foi sacado R$ 200 em 2023-05-30 23:30:04.708248Foi depositado R$ 50 em 2023-05-30 23:30:04.708248Foi sacado R$ 700 em 2023-05-30 23:30:04.708248Foi depositado R$ 700 em 2023-05-30 23:30:04.708248Foi depositado R$ 50 em 2023-05-30 23:31:01.986996Foi sacado R$ 200 em 2023-05-30 23:31:01.986996Foi depositado R$ 50 em 2023-05-30 23:31:01.986996Foi sacado R$ 700 em 2023-05-30 23:31:01.986996Foi depositado R$ 700 em 2023-05-30 23:31:01.986996Foi depositado R$ 50 em 2023-05-30 23:32:43.338600Foi sacado R$ 200 em 2023-05-30 23:32:43.338600Foi depositado R$ 50 em 2023-05-30 23:32:43.338600Foi sacado R$ 700 em 2023-05-30 23:32:43.338600Foi depositado R$ 700 em 2023-05-30 23:32:43.338600Número da conta: 254 
+ Saldo: 750.Foi depositado R$ 50 em 2023-05-30 23:33:15.011586
+Foi sacado R$ 200 em 2023-05-30 23:33:15.011586
+Foi depositado R$ 50 em 2023-05-30 23:33:15.011586
+Foi sacado R$ 700 em 2023-05-30 23:33:15.011586
+Foi depositado R$ 700 em 2023-05-30 23:33:15.011586
+Número da conta: 254 
+ Saldo: 750.Foi sacado R$ 200 em 2023-05-30 23:33:57.321120
+Foi sacado R$ 700 em 2023-05-30 23:33:57.321120
+Número da conta: 254 
+ Saldo: 750.Foi sacado R$ 200 em 2023-05-30 23:35:02.603407
+Foi sacado R$ 700 em 2023-05-30 23:35:02.603407
+Número da conta: 254 
+ Saldo: 750.Número da conta: 254 
+ Saldo: 750.Número da conta: 254 
+ Saldo: 750.Foi depositado R$ 50 em 2023-05-30 23:37:00.932474
+Foi depositado R$ 50 em 2023-05-30 23:37:00.932474
+Foi depositado R$ 700 em 2023-05-30 23:37:00.932474
+Número da conta: 254 
+ Saldo: 750.Foi depositado R$ 50 em 2023-05-30 23:37:17.420640
+Foi sacado R$ 200 em 2023-05-30 23:37:17.420640
+Foi depositado R$ 50 em 2023-05-30 23:37:17.420640
+Foi sacado R$ 700 em 2023-05-30 23:37:17.420640
+Foi depositado R$ 700 em 2023-05-30 23:37:17.420640
+Número da conta: 254 
+ Saldo: 750.

@@ -1,4 +1,6 @@
 import datetime
+
+Arquivo = open("Extrato.txt", "a")
 class Conta:
     def __init__(self, Numero_Conta, Saldo, Status, Nome_Cliente, Tipo_Conta, Limite=0, Limite_Usado=0):
 
@@ -17,14 +19,13 @@ class Conta:
             if self.Saldo >= 0:
                 self.Saldo = Deposito+self.Saldo
                 # return self.Saldo
-                inforDoTxt = f'Foi depositado R$ {Deposito} em {self.Data}'#só funciona  sem o retorno
-                self.Extrato_Conta(inforDoTxt)
+                Arquivo.write(f'Foi depositado R$ {Deposito} em {self.Data}\n')#só funciona  sem o retorno
+
             else:
                 self.Limite_Usado = Deposito+self.Saldo
                 self.Saldo = self.Saldo + Deposito
                 # return self.Limite_Usado, self.Saldo
-                inforDoTxt = f'Foi depositado R$ {Deposito} em {self.Data}' #só funciona  sem o retorno
-                self.Extrato_Conta(inforDoTxt)
+                Arquivo.write(f'Foi depositado R$ {Deposito} em {self.Data}\n') #só funciona  sem o retorno
 
         else:
             print("Conta está desativada")
@@ -33,16 +34,14 @@ class Conta:
         if self.Status == "Ativado":
             if Saque < self.Saldo or Saque == self.Saldo:
                 self.Saldo = self.Saldo-Saque
-                # print(f'Seu saldo é {self.Saldo}')
-                inforDoTxt = f'Foi sacado R$ {Saque} em {self.Data}'#só funciona  sem o retorno
-                self.Extrato_Conta(inforDoTxt)
+                # return self.Saldo
+                Arquivo.write(f'Foi sacado R$ {Saque} em {self.Data}\n')#só funciona  sem o retorno
 
             else:
                 self.Limite_Usado = Saque-self.Saldo
                 self.Saldo = self.Saldo-Saque
                 print(f'Seu limite usado é {self.Limite_Usado} e o saldo é {self.Saldo}')#só funciona  sem o retorno
-                inforDoTxt = f'Foi sacado R$ {Saque}'
-                self.Extrato_Conta(inforDoTxt)
+                Arquivo.write(f'Foi sacado R$ {Saque} em {self.Data}\n')
 
         else:
             print("Conta está desativada")
@@ -82,19 +81,18 @@ class Conta:
             self.Limite = False
             return self.Limite
 
-    def Extrato_Conta(self, add):
-        self.add = add
-        with open('Extrato.txt', 'a') as Extrato: #não estou conseguindo inserir as movimentações
-            Extrato.write(f'Nome: {self.Nome_Cliente}\nNúmero da conta: {self.Numero_Conta}\nSaldo: {self.Saldo}\nTipo da conta: {self.Tipo_Conta}\n')
-            Extrato.write(add)
+    def Extrato_Conta(self):
+        if self.Status == "Ativado":
+            Arquivo.write(f"Número da conta: {self.Numero_Conta} \n Saldo: {self.Saldo}.")
+            print("O extrato da sua conta foi gerado com sucesso.")
+        else:
+            print("Sua conta está desativada! Não pode gerar o extrato.")
 
 
 C1 = Conta(254,850, "Ativado", "Opal", "Corrente")
-#C2 = Conta.Extrato_Conta(253,1000,"Ativado", "Opal", "Poupança")
-C1.Ativar_Limite(300)
 C1.Depositar(50)
 C1.Sacar(200)
 C1.Depositar(50)
 var = C1.Sacar(700)
 var1= C1.Depositar(700)
-print(var1)
+C1.Extrato_Conta()
